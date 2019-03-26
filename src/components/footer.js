@@ -51,23 +51,23 @@ export class Footer extends Component {
 
 
                 <TomatoButton > 
-                <Link to="mailTo:bentleysbakeryvt@gmail.com" target="_blank"
+                <a href="mailTo:bentleysbakeryvt@gmail.com" target="_blank"
                 target="_blank" 
                 rel="noopener noreferrer"
                 > 
                 Email Us!
-                    </Link>
+                    </a>
                 </TomatoButton>
 
                 <TomatoButton >
-                <Link to="https://www.facebook.com/Bentleys-Bakery-and-Cafe-159258157467790/" 
+                <a href="https://www.facebook.com/Bentleys-Bakery-and-Cafe-159258157467790/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                 > 
                       <span className="icon">
                         <FontAwesomeIcon icon={faFacebookF} />
                       </span>
-                    </Link>
+                    </a>
                 </TomatoButton>
           </Wrapper>
     )
