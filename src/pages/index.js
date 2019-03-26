@@ -6,28 +6,36 @@ import { Link, graphql } from "gatsby"
 
 import styled from 'styled-components'
 
-
-const Paragraph = styled.p`
-  font-size: 15px;
-  text-align: left;
-`;
-
 const Wrapper = styled.section`
   padding: 1em;
 `;
 
+const Paragraph = styled.p`
+font-size: 15px;
+text-align: left;
+max-width: 480px;
+position: relative;
+left: 18%;
+`;
+
+
+
 class indexPage extends React.Component {
   render() {
+
     const siteName = get(this, "props.data.contenfulSite.bizName");
     const siteAbout = get(this, "props.data.contentfulSite.bizAbout.bizAbout");
+
     return (
-      <Template>
+  <Template>
         <Helmet title={siteName} />
 
         <Wrapper>
                 <Paragraph>{siteAbout}</Paragraph>
           </Wrapper>
-      </Template>
+
+   </Template>
+
     )
   }
 }

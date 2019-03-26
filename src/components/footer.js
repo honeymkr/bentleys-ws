@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import logoImg from "../images/logo.png"
 import { Link } from "gatsby"
 import styled from 'styled-components'
 
@@ -14,6 +13,7 @@ const Button = styled.button`
   border-radius: 3px;
   border: none;
   padding: 1rem;
+  margin-left: 0.5rem;
   color: white;
   font-size:20px;
 `;
@@ -24,6 +24,10 @@ const TomatoButton = styled(Button)`
 
 const Hours = styled.p`
 font-size: 17px;
+`;
+
+const Header = styled.h3`
+color:white;
 `;
 
 const Wrapper = styled.section`
@@ -40,13 +44,27 @@ export class Footer extends Component {
     return (
    
     <Wrapper>
-            <h3>Hours of Operation:</h3>
+            <Header>Hours of Operation:</Header>
                 <Hours>Monday through Friday 6:30am to 3:00pm </Hours>
                 <Hours>Closed Tuesday </Hours>
                 <Hours>Saturday and Sunday 7:30am to 1:30pm </Hours>
 
-          
 
+                <TomatoButton > 
+                <Link to="mailTo:bentleysbakeryvt@gmail.com" target="_blank"> 
+                Email Us!
+                    </Link>
+                </TomatoButton>
+
+                <TomatoButton >
+                <Link to="https://www.facebook.com/Bentleys-Bakery-and-Cafe-159258157467790/" 
+                      target="_blank" 
+                > 
+                      <span className="icon">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                      </span>
+                    </Link>
+                </TomatoButton>
           </Wrapper>
     )
   }
