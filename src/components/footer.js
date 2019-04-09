@@ -44,14 +44,20 @@ export class Footer extends Component {
     return (
    
     <Wrapper>
+
+
+
             <Header>Hours of Operation:</Header>
                 <Hours>Monday through Friday 6:30am to 3:00pm </Hours>
                 <Hours>Closed Tuesday </Hours>
                 <Hours>Saturday and Sunday 7:30am to 1:30pm </Hours>
 
+               <h3>Address: 20 Hill street, Danville VT 05828
+Mailing address: PO Box 77, Danville VT 05828</h3>
+
 
                 <TomatoButton > 
-                <a href="mailTo:bentleysbakeryvt@gmail.com" target="_blank"
+                <a href="mailTo:bentleysbakeryandcafevt@gmail.com" target="_blank"
                 target="_blank" 
                 rel="noopener noreferrer"
                 > 
