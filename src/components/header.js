@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebookF,
 } from "@fortawesome/free-brands-svg-icons"
-
+import styled from 'styled-components'
 
 const Button = styled.button`
   background: palevioletred;
